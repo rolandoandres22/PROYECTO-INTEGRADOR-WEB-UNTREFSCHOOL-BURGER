@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow">    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Belanosima:wght@500&display=swap" rel="stylesheet"> <!-- cdn para importar los tipo de letra -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"> <!-- cdn para importar los iconos -->
+    <link rel="stylesheet" href="../css/style.css"><!-- css principal -->
+    <link rel="shortcut icon" href="../img/logo/logoUntrefSchool.ico" type="image/x-icon"><!-- se convirtió el logo a .ico y se agrego a la web -->
+    <title>Untref School</title><!-- titulo Untref School como dice el enunciado -->
+</head>
+<body><!-- para toda la web se utilizo el color gris de la paleta de colores #EFF5F5 y colores mas claros para la section-cards -->
+    
+     <div class="logo">
+                <a href="#"><img src="../img/logo/logoUntrefSchool.webp" alt="Logo UntrefSchool"></a><!-- imagen logo recarga la pagina para el logo se utilizo el color naranja de la paleta de colores #FC7300 -->
+                <a href="#">UntrefSchool</a><!-- texto del logo tambien recarga - podria hacer referencia al index de ser necesario con los href-->
+    </div>
+
+            <!-- Seccion contacto -->
+     <section id="contacto" class="about-section active">
+        <h1>Contacto</h1>   
+        <div class="about-contact">          
+          <img src="../img/contact/contacto.webp" alt="imagen de contacto">          
+          <!-- se probo con form submit y anda, cambiar mi correo por el suyo para pruebas asi no me llegan a mi -->
+          <form action="https://formsubmit.co/rolandoandres22@gmail.com" method="post">  
+            <label for="nombreCompleto">Nombre Completo:</label><!-- Se uso lavel for como enseño Marcelo -->
+            <input type="text" id="nombreCompleto" name="nombre" required></input>
+            <label for="e-mail">E-mail: </label>
+            <input type="email" id="e-mail" name="email" required></input>
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="4" required></textarea> 
+            <button class="nav-button btn-c" type="submit">Enviar</button>
+          </form>
+        </div>
+    </section>
+<header>
+          <input type="checkbox" id="menu-toggle" class="menu-checkbox">
+          <label for="menu-toggle" class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+          </label>
+           <nav>
+            <ul class="menu">
+              <!-- se adapto el menu para que valla aa la pagina index#seccion correspondiente ya que es una pagina a parte la de contacto solo contacto hace referencia a la seccion contacto -->
+                <li><a href="../index.html#quienes-somos" class="nav-button"><i class="fa fa-users" aria-hidden="true"></i><span>Quienes somos</span></a></li>
+                <li><a href="../index.html#por-que-elegirnos" class="nav-button"><i class="fa fa-thumbs-up" aria-hidden="true"></i><span>¿Por qué elegirnos?</span></a></li>
+                <li><a href="../index.html#propuesta-educativa"  class="nav-button"><i class="fa fa-graduation-cap" aria-hidden="true"></i><span>Propuesta educativa</span></a></li>
+                <li><a href="../index.html#ultimas-noticias"  class="nav-button"><i class="fa fa-file-text" aria-hidden="true"></i><span>Últimas noticias</span></a></li>
+                <li><a href="#contacto" class="nav-button active"><i class="fa fa-envelope" aria-hidden="true"></i><span>Contáctenos</span></a></li>
+            </ul>
+        </nav>
+</header>
+</body>
+<!-- Inicio del Footer -->
+<footer class="footer">
+  <div class="footer-column">
+    <h3>Redes Sociales</h3>
+    <ul class="social-links">
+      <li><a href="#"><i class="fab fa-facebook-f"></i> Facebook</a></li><!-- color de los iconos naranjas #FC7300 -->
+      <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+      <li><a href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
+      <li><a href="#"><i class="fab fa-youtube"></i> YouTube</a></li>
+    </ul>
+  </div>
+
+  <div class="footer-column">
+    <h3>Ubicación</h3>
+    <div class="map-container">
+      <!-- mapa de balcarce sacado de google map -->
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d44906.74721551144!2d-58.26951174742871!3d-37.85134092539908!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x959aaf6a677eae5b%3A0xe896650fcfe4517b!2sBalcarce%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1747937246715!5m2!1ses!2sar" 
+        style="border:0;" 
+        allowfullscreen="" 
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </div>
+  </div>
+
+  <div class="footer-column">
+    <h3>Contacto</h3>
+    <ul class="contact-info">
+      <li><i class="fas fa-phone"></i> +54 2266 23-4567</li><!-- color de los iconos naranjas #FC7300 -->
+      <li><i class="fas fa-envelope"></i> email@untrefschool.edu.ar</li>
+      <li><i class="fab fa-whatsapp"></i> +54 9 2266 22-3344</li>
+    </ul>
+  </div>
+</footer>
+
+</html>

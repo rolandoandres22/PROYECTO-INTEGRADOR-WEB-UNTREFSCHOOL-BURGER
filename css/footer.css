@@ -1,0 +1,48 @@
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: inherit;
+  text-align: center;
+  background-color: #EFF5F5;
+  padding: 30px;
+  gap: 20px;
+}
+
+.footer-column {
+  flex: 1;
+  min-width: 250px;
+}
+
+.footer h3 {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.social-links,
+.contact-info {
+  list-style: none;
+  padding: 0px;
+}
+
+.social-links li,
+.contact-info li {
+  margin-bottom: 25px;
+  font-size: 14px;
+}
+
+.social-links a {
+  text-decoration: none;
+  color: #333;
+}
+
+.social-links i,
+.contact-info i {
+  margin-right: 8px;
+  color: #e57e25;
+}
+
+.map-container iframe {
+  border-radius: 10px;
+  width: 100%;
+  height: 150px;
+}

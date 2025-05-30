@@ -1,0 +1,58 @@
+/* pagina de estilo principal - paleta de colores para tener de ejemplo*/
+@import url('nav.css');
+@import url('logo.css');
+@import url('section.css');
+@import url('card.css');
+@import url('notice.css');
+@import url('contact.css');
+@import url('footer.css');
+@import url('hamburgejas.css');
+
+Paleta-de-colores{
+    color:#FC7300;
+    color:#1F8A70;
+    color:#00425A;
+    color:#181823;
+    color:#EFF5F5;
+ } 
+ /* se agrego esto que vi en un vieo de instagram para que se desplase mas lento las section */
+*{
+    scroll-behavior: smooth;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+html {
+    background-color: #EFF5F5;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Belanosima", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    
+}
+
+.belanosima-regular {
+  font-family: "Belanosima", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+header {
+    background-color:#f9f9f9;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    padding: 10px 0;
+    margin: 0 auto;
+    max-width: 1300px;
+    top: 0;
+    left: auto;
+    z-index: 999;
+    position: sticky;
+    order: -1; /* Mueve visualmente el header al inicio sin cambiar el HTML*/
+    width: 100%;
+}  
