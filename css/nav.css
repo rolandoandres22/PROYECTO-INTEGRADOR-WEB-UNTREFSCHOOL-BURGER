@@ -81,7 +81,7 @@ color: #FC7300;
 .hamburger {
   display: none;
   cursor: pointer;
-  padding: 10px;
+  padding-left: 10px;
   z-index: 1000;
   position: relative;
 }
@@ -128,7 +128,7 @@ color: #FC7300;
     gap: 3px;
     transition: right 0.5s ease;
     z-index: 9999;
-    padding: 50px 3px 10px 3px;
+    padding: 40px 3px 10px 3px;
     box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
     margin: 10px;
     border-radius: 3px;
