@@ -53,7 +53,7 @@ nav {
 #propuesta-educativa:target~header nav .nav-button[href="#propuesta-educativa"],
 #ultimas-noticias:target~header nav .nav-button[href="#ultimas-noticias"],
 #contacto:target~header nav .nav-button[href="#contacto"] {
-    background-color: #FC7300; 
+    background-color: #FC7300;
     outline-color: #FC7300;
 }
 /* lo mismo pero para hover sobre el boton */
@@ -72,9 +72,9 @@ color: #FC7300;
 }
 /* hover de la clase active */
 .nav-button.active {
-  background-color: #FC7300; 
+  background-color: #FC7300;
   outline-color: #FC7300;
-} 
+}
 
 /* estilos del menu hamburguejas*/
 .hamburger {
@@ -113,7 +113,7 @@ color: #FC7300;
     background-color:#f9f9f9;
     z-index: 999999;
   }
-  
+
   /* Estilos del menu desplegable */
   nav .menu {
     position: fixed;
@@ -129,17 +129,18 @@ color: #FC7300;
     transition: right 0.5s ease;
     z-index: 9999;
     padding: 40px 3px 10px 3px;
-      box-shadow: 0 10px 15px -5px rgba(0, 0, 0, 0.1); /* Sombrea solo hacia abajo */
+      box-shadow: 0 10px 15px -5px rgba(0, 0, 0, 0.1);
     margin: 10px;
     border-radius: 3px;
   }
-  
+
   /* Mostrar menu cuando el checkbox esta activado */
   .menu-checkbox:checked ~ nav .menu {
     left: 0;
   }
-  
+
   /* Transformar 3 rayas de la hamburguesa en X */
+  /* roto la primera raya -45 grados */
   .menu-checkbox:checked + .hamburger .line:nth-child(1) {
     transform: rotate(-45deg) translate(-5px, 6px);
   }
@@ -147,11 +148,11 @@ color: #FC7300;
   .menu-checkbox:checked + .hamburger .line:nth-child(2) {
     opacity: 0;
   }
-  
+  /* roto la tercer raya 45 grados */
   .menu-checkbox:checked + .hamburger .line:nth-child(3) {
     transform: rotate(45deg) translate(-5px, -6px);
   }
-  
+
   .nav-button {
     display: flex;
     box-sizing: border-box;
@@ -161,8 +162,8 @@ color: #FC7300;
     font-size: 0.9em;
     margin-top: 5px;
   }
-  
-  /* Ajustes para hover en android asi se ve pintado*/
+
+  /* Ajustes para hover en android asi se ve pintado en vez de quedar estancado en hover*/
   #quienes-somos:target ~ header nav .nav-button[href="#quienes-somos"]:hover,
   #por-que-elegirnos:target ~ header nav .nav-button[href="#por-que-elegirnos"]:hover,
   #propuesta-educativa:target ~ header nav .nav-button[href="#propuesta-educativa"]:hover,
@@ -179,7 +180,7 @@ color: #FC7300;
   .menu {
     gap: 10px;
   }
-  
+
   .nav-button {
     padding: 10px 7px;
     min-width: 190px;
@@ -191,7 +192,7 @@ color: #FC7300;
   .menu {
     gap: 5px;
   }
-  
+
   .nav-button {
     padding: 10px 6px;
     font-size: 0.8em;
