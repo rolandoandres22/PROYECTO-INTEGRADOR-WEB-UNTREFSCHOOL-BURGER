@@ -73,11 +73,10 @@ color: #FC7300;
 /* hover de la clase active */
 .nav-button.active {
   background-color: #FC7300; 
-   outline-color: #FC7300;
-   
+  outline-color: #FC7300;
 } 
 
-/* Estilos del menú hamburguesa */
+/* estilos del menu hamburguejas*/
 .hamburger {
   display: none;
   cursor: pointer;
@@ -92,6 +91,7 @@ color: #FC7300;
   background-color: #0273bf;
   margin: 5px 0;
   transition: all 0.3s ease;
+  border-radius: 2px;
 }
 
 .menu-checkbox {
@@ -114,7 +114,7 @@ color: #FC7300;
     z-index: 999999;
   }
   
-  /* Estilos del menú desplegable */
+  /* Estilos del menu desplegable */
   nav .menu {
     position: fixed;
     top: 10px;
@@ -129,21 +129,21 @@ color: #FC7300;
     transition: right 0.5s ease;
     z-index: 9999;
     padding: 40px 3px 10px 3px;
-    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 10px 15px -5px rgba(0, 0, 0, 0.1); /* Sombrea solo hacia abajo */
     margin: 10px;
     border-radius: 3px;
   }
   
-  /* Mostrar menú cuando el checkbox está activado */
+  /* Mostrar menu cuando el checkbox esta activado */
   .menu-checkbox:checked ~ nav .menu {
     left: 0;
   }
   
-  /* Transformar hamburguesa en X */
+  /* Transformar 3 rayas de la hamburguesa en X */
   .menu-checkbox:checked + .hamburger .line:nth-child(1) {
     transform: rotate(-45deg) translate(-5px, 6px);
   }
-  
+  /* oculto la raya del medio */
   .menu-checkbox:checked + .hamburger .line:nth-child(2) {
     opacity: 0;
   }
@@ -152,7 +152,6 @@ color: #FC7300;
     transform: rotate(45deg) translate(-5px, -6px);
   }
   
-  /* Ajustes para los botones en móvil */
   .nav-button {
     display: flex;
     box-sizing: border-box;
@@ -160,9 +159,10 @@ color: #FC7300;
     min-width: 190px;
     justify-content: flex-start;
     font-size: 0.9em;
+    margin-top: 5px;
   }
   
-  /* Ajustes para hover en móvil */
+  /* Ajustes para hover en android asi se ve pintado*/
   #quienes-somos:target ~ header nav .nav-button[href="#quienes-somos"]:hover,
   #por-que-elegirnos:target ~ header nav .nav-button[href="#por-que-elegirnos"]:hover,
   #propuesta-educativa:target ~ header nav .nav-button[href="#propuesta-educativa"]:hover,
@@ -182,8 +182,7 @@ color: #FC7300;
   
   .nav-button {
     padding: 10px 7px;
-    font-size: 0.8em;
-    min-width: 170px;
+    min-width: 190px;
     width: 100%;
   }
 }
